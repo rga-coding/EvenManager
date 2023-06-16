@@ -1,0 +1,5 @@
+Building mobile apps with React Native and Django backend
+
+
+We'll dive into the world of mobile app development with React Native and Django (including Django Rest Framework to build an API). We'll cover essential topics like navigation with stack navigator, drawer navigator, and bottom tab navigator, basic React components such as View, Text, TextInput, Button, ScrollView, Flatlist and more, styling React components with StyleSheet, and backend integration using Django Rest Framework. We'll also explore QR code generation on the backend and how to add new objects to the database. By the end of this tutorial, you'll have a solid foundation for building robust mobile apps with React Native and Django.
+We'll enable adding new events, fix issues make refresh controller to load new data and much more. By the end of this tutorial, you'll have a fully-functional cross-platform app that integrates seamlessly with a Django backend.
