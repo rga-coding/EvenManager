@@ -35,6 +35,17 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "expo"
+version = "0.1.2"
+description = "Selectively expose module functionality"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "expo-0.1.2-py3-none-any.whl", hash = "sha256:a36d64c6954de353ee67491351362b04c1b3281acb69afa8534b41279ecd2306"},
+    {file = "expo-0.1.2.tar.gz", hash = "sha256:df9042d9d73307bf987e89791b6e36744c5fa99f7464210e956e76d7fe3e84bd"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -64,4 +75,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f7ecf77d53ff78096bbbe413ceb1729c56c6ff47ac1f3be661589ea8859af2b0"
+content-hash = "f8273e8976184f29a62dc7af371540efd61cf0991ad611f043c972057c8ccfb6"
