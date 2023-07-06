@@ -1,6 +1,8 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer } from "@react-navigation/native";
 import { HomeStack } from './navigation/stack'
+import { MyDrawer } from './navigation/drawer'
+import { StatusBar } from 'expo-status-bar';
 
 // React Native web  corresponding tags
 // https://reactnative.dev/docs/intro-react-native-components#core-components
@@ -8,7 +10,9 @@ import { HomeStack } from './navigation/stack'
 export default function App() {
   return (
     <NavigationContainer>
-    <HomeStack></HomeStack>
+    {/*<HomeStack></HomeStack>*/}
+    <MyDrawer />
+    <StatusBar style='light' />
     </NavigationContainer>
   );
 }
