@@ -45,6 +45,7 @@ export const MyDrawer = () => {
         name="HomeStack"
         options={{
           title: "Home",
+          headerShown: false,
           drawerIcon: () => <Ionicons name="home" size={22} />,
         }}
         component={HomeStack}
