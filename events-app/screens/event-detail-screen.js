@@ -5,11 +5,11 @@ import { HeaderBackButton } from "@react-navigation/elements";
 
 const EventDetailScreen = () => {
   const route = useRoute();
-  const { eventId, title, description } = route.params;
+  const { eventId, name, description } = route.params;
   const navigation = useNavigation();
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: "New title",
+      headerTitle: name,
       headerLeft: () => (
         <HeaderBackButton
           tintColor="white"
@@ -24,8 +24,8 @@ const EventDetailScreen = () => {
       <Text style={{ fontSize: 20 }}>
         This is the event detail screen for {eventId}
       </Text>
-      <Text style={{ fontSize: 20 }}>{title}</Text>
-      <Text style={{ fontSize: 20 }}>{description}</Text>
+      <Text style={{ fontSize: 14 }}>{name}</Text>
+      <Text style={{ fontSize: 14 }}>{description}</Text>
     </View>
   );
 };
