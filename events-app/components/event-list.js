@@ -1,29 +1,29 @@
 import { FlatList, RefreshControl, View } from "react-native";
-import { DUMMY_DATA } from "../data/data";
 import EventItem from "./event-item";
 
 // ReactNative: it's better to use FlatList then to use map (looping)
 
-const EventList = () => {
+const EventList = ({ data, onRefresh }) => {
   const renderItem = ({ item }) => {
     return (
       <EventItem
         id={item.id}
-        title={item.title}
+        name={item.name}
         description={item.description}
+        qrCode={item.qr_code}
       ></EventItem>
     );
   };
   return (
     <View>
       <FlatList
-        data={DUMMY_DATA}
+        data={data}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
         refreshControl={
           <RefreshControl
             refreshing={false}
-            onRefresh={() => console.log("refreshing..")}
+            onRefresh={onRefresh}
           />
         }
       ></FlatList>
